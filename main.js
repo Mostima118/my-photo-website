@@ -27,11 +27,3 @@ window.addEventListener('resize', () => {
   resizeRenderer();
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const elements = document.querySelectorAll('p, img');
-
-  elements.forEach((el, index) => {
-    el.classList.add('fade-in');
-    el.style.animationDelay = `${index * 0.15}s`;
-  });
-});

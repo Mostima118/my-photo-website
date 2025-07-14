@@ -13,7 +13,7 @@ body {
 
 header {
   background-color: #222;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   text-align: center;
 }
 
@@ -84,23 +84,6 @@ section {
 
   .gallery {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
-}
-
-/* Fade-in animation */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation-fill-mode: forwards;
-  animation-name: fadeInUp;
-  animation-duration: 0.8s;
-  animation-timing-function: ease-out;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
