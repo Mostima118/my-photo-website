@@ -5,11 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Wilson's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Optional Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
-  <!-- Inline style to match index styling -->
   <style>
     body {
       margin: 0;
@@ -88,16 +86,21 @@
   <section id="portfolio">
     <h2>Portfolio</h2>
     <div class="gallery">
-      <img src="images/1.jpg" alt="Photo 1" />
-      <img src="images/2.jpg" alt="Photo 2" />
-      <img src="images/3.jpg" alt="Photo 3" />
-      <img src="images/4.jpg" alt="Photo 4" />
-      <img src="images/5.jpg" alt="Photo 5" />
-      <img src="images/6.jpg" alt="Photo 6" />
-      <img src="images/7.jpg" alt="Photo 7" />
-      <img src="images/8.jpg" alt="Photo 8" />
-      <img src="images/9.jpg" alt="Photo 9" />
+      <a href="images/1.jpg" class="glightbox" data-gallery="portfolio"><img src="images/1.jpg" alt="Photo 1"></a>
+      <a href="images/2.jpg" class="glightbox" data-gallery="portfolio"><img src="images/2.jpg" alt="Photo 2"></a>
+      <a href="images/3.jpg" class="glightbox" data-gallery="portfolio"><img src="images/3.jpg" alt="Photo 3"></a>
+      <a href="images/4.jpg" class="glightbox" data-gallery="portfolio"><img src="images/4.jpg" alt="Photo 4"></a>
+      <a href="images/5.jpg" class="glightbox" data-gallery="portfolio"><img src="images/5.jpg" alt="Photo 5"></a>
+      <a href="images/6.jpg" class="glightbox" data-gallery="portfolio"><img src="images/6.jpg" alt="Photo 6"></a>
+      <a href="images/7.jpg" class="glightbox" data-gallery="portfolio"><img src="images/7.jpg" alt="Photo 7"></a>
+      <a href="images/8.jpg" class="glightbox" data-gallery="portfolio"><img src="images/8.jpg" alt="Photo 8"></a>
+      <a href="images/9.jpg" class="glightbox" data-gallery="portfolio"><img src="images/9.jpg" alt="Photo 9"></a>
     </div>
   </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ selector: '.glightbox' });
+  </script>
 </body>
 </html>
